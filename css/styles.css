@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sniglet:wght@400;800&display=swap');
+* {
+    font-family: 'Sniglet', Roboto, sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -41,7 +47,7 @@ body {
 input {
     background-color: #FFEDD3;
     color: #000000;
-    padding: 8px;
+    padding: 10px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -54,22 +60,27 @@ input:focus{
 }  
 
 h1 {
+    font-weight: normal;
     font-size: 40px;
 }
 
 h2 {
+    font-weight: normal;
     font-size: 36px;
 }
 
 h3 {
+    font-weight: normal;
     font-size: 32px;
 }
 
 h4 {
+    font-weight: normal;
     font-size: 28px;
 }
 
 p {
+    font-weight: normal;
     font-size: 24px;
 }
 
@@ -276,9 +287,9 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    width: 45%;
+    width: 40%;
     color: #FFFFFF;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 
