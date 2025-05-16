@@ -267,7 +267,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .bandeau::before {
@@ -293,6 +293,10 @@ header {
     margin-left: 10%;
 }
 
+.bandeauText p {
+    font-size: 32px;
+}
+
 /* bandeauNosValeur */
 
 .bandeauNosValeur {
@@ -301,7 +305,7 @@ header {
     flex-direction: row;
     align-items: center;
     margin: auto;
-    width: 90%;
+    width: 97%;
     height: 500px;
     border-radius: 10px;
 }
