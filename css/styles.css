@@ -145,7 +145,7 @@ header {
     margin: 10px;
 }
 
-.Logo img {
+.logo img {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -153,23 +153,23 @@ header {
     height: 80px;
 }
 
-.LogoEtReseauSociaux a {
+.logoEtReseauSociaux a {
     min-width: 60px;
 }
 
-.ReseauSociaux {
+.reseauSociaux {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
 }
 
-.ReseauSociaux img {
+.reseauSociaux img {
     width: 45px;
     height: 45px;
 }
 
-.LogoEtReseauSociaux {
+.logoEtReseauSociaux {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -178,7 +178,7 @@ header {
     gap: 20px;
 }
 
-.RechercheEtBouton {
+.rechercheEtBouton {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -187,12 +187,12 @@ header {
     width: 40%;
 }
 
-.RechercheEtBouton input {
+.rechercheEtBouton input {
     width: 100%;
     min-width: 200px;
 }
 
-.Panier {
+.panier {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -200,12 +200,12 @@ header {
     gap: 4px;
 }
 
-.Panier a {
+.panier a {
     color: #5E7C46;
     transition: color 0.3s ease;
 }
 
-.Panier .panier-img {
+.panier .panier-img {
     width: 30px;
     height: 30px;
     background-image: url('/images/Panier.png');
@@ -214,18 +214,18 @@ header {
     transition: background-image 0.3s ease;
 }
 
-.Panier:hover a {
+.panier:hover a {
     color: #50911D;
     cursor: pointer;
 }
 
-.Panier:hover .panier-img {
+.panier:hover .panier-img {
     background-image: url('/images/PanierClair.png');
 }
 
 /* nav bar */
 
-.Menu {
+.menu {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -236,7 +236,7 @@ header {
     margin: 0;
 }
 
-.Menu a {
+.menu a {
     flex: 1;
     text-align: center;
     background-color: #5E7C46;
@@ -250,7 +250,7 @@ header {
     font-size: 24px;
 }
 
-.Menu a:hover {
+.menu a:hover {
     color: #5E7C46;
     background-color: #FFEDD3;
     cursor: pointer;
@@ -258,7 +258,7 @@ header {
 
 /* bandeau */
 
-.Bandeau {
+.bandeau {
     position: relative;
     width: 100vw;
     height: 60vh;
@@ -269,7 +269,7 @@ header {
     overflow: hidden; 
 }
 
-.Bandeau::before {
+.bandeau::before {
     content: "";
     position: absolute;
     top: 0;
@@ -280,7 +280,7 @@ header {
     z-index: 1;
 }
 
-.BandeauText {
+.bandeauText {
     position: relative;
     z-index: 2;
     display: flex;
