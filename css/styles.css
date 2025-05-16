@@ -142,6 +142,10 @@ header {
     height: 80px;
 }
 
+.LogoEtReseauSociaux a {
+    min-width: 60px;
+}
+
 .ReseauSociaux {
     display: flex;
     flex-direction: row;
@@ -160,6 +164,7 @@ header {
     flex-direction: row;
     align-items: center;
     width: 25%;
+    gap: 20px;
 }
 
 .RechercheEtBouton {
@@ -244,7 +249,7 @@ header {
 
 .Bandeau {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 60vh;
     background-image: url('/images/rouleauMulti.jpg');
     background-size: cover;
