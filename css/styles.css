@@ -215,11 +215,13 @@ header {
 }
 
 .panier:hover a {
+    scale: 1.1;
     color: #50911D;
     cursor: pointer;
 }
 
 .panier:hover .panier-img {
+    scale: 1.1;
     background-image: url('/images/PanierClair.png');
 }
 
