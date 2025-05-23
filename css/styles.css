@@ -459,5 +459,10 @@ header {
     color: inherit; 
 }
 
+.footer a:hover {
+    color: #5E7C46;
+    text-decoration: none;
+}
+
 
 
