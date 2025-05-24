@@ -779,8 +779,6 @@ header {
     text-align: center;
     font-size: 1rem;
     outline: none;
-    -moz-appearance: textfield;
-    /* Pour Firefox, retirer flèches par défaut */
 }
 
 .quantity-control input::-webkit-inner-spin-button,
