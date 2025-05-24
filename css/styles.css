@@ -653,5 +653,76 @@ header {
 }
 
 
+.fondCouleur {
+    background-color: #FFEDD3;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.containerDescriptionProduit {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    gap: 1rem;
+    background-color: rgb(255, 222, 245);
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.imageDescription {
+    max-width: 450px;
+    max-height: 450px;
+    border: #5E7C46 4px solid;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imageDescription img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-position: center;
+    object-fit: cover;
+}
+
+.descriptionProduit {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #5E7C46;
+}
+
+.description {
+    width: 80%;
+    background-color: aqua;
+    margin-left: 2rem;
+}
+
+.description p {
+    font-size: 1rem;
+}
+
+.description h6 {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.detailsDescription {
+    width: 50%;
+    columns: 2;
+    column-gap: 2rem;
+    background-color: darkgrey;
+    margin-left: 2rem;
+    padding: 1rem;
+}
+
+.detailsDescription p {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    break-inside: avoid;
+}
+
+
 
 
