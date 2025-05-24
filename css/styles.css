@@ -93,6 +93,30 @@ p {
     font-size: 24px;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 2rem auto;
+}
+
+.pagination button {
+    background-color: white;
+    color: #5E7C46;
+    font-size: 1.5rem;
+    border: 2px solid #5E7C46;
+    padding: 0.3rem 0.7rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.pagination button.active,
+.pagination button:hover {
+    background-color: #5E7C46;
+    color: #FFEDD3;
+}
+
 /* Card */
 
 .cardProduit {
