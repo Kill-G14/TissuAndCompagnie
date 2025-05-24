@@ -9,6 +9,8 @@ body {
     padding: 0;
 }
 
+/* designe systéme */
+
 .btnStyle1 {
     background-color: #5E7C46;
     color: #FFEDD3;
@@ -16,16 +18,13 @@ body {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-family: 16px;
     text-decoration: none;
-    max-width: 75px;
 }
 
 .btnStyle1:hover {
     background-color: #50911D;
     color: #FFEDD3;
 }
-
 
 .btnStyle2 {
     background-color: #FFEDD3;
@@ -79,6 +78,16 @@ h4 {
     font-size: 28px;
 }
 
+h5 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h6 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
 p {
     font-weight: normal;
     font-size: 24px;
@@ -118,6 +127,7 @@ p {
     width: 100%;
     color: #5E7C46;
     font-size: 16px;
+    font-weight: normal;
 }
 
 .prixProduit {
@@ -128,7 +138,7 @@ p {
     width: 100%;
     color: #5E7C46;
     font-size: 16px;
-    font-weight: 1000;
+    font-weight: normal;
 }
 
 
@@ -388,7 +398,6 @@ header {
 
 /* footer */
 
-
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -561,6 +570,61 @@ header {
 
 .containerMdp button {
     margin-left: 100%;
+    margin-bottom: 1rem;
+}
+
+/* magasin */
+
+.containerMagasin  {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.containerMagasin h5 {
+    color: #5E7C46;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.containerFiltre h6 {
+    color: #5E7C46;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.containerFiltre {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 20%;
+    min-width: 200px;
+    height: 100%;
+    margin: 1rem;
+    padding-left: 1rem;
+    border: #5E7C46 3px solid;
+    border-radius: 15px;
+}
+
+
+.containerGrille {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+}
+
+.containerFiltre form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap : 5px;
     margin-bottom: 1rem;
 }
 
