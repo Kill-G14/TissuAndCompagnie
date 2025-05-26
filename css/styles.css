@@ -801,10 +801,6 @@ header {
     color: #5E7C46;
 }
 
-.containerProfile h3 {
-    text-decoration: underline;
-}
-
 .historiqueDeCommande {
     width: 100%;
     display: flex;
@@ -837,6 +833,7 @@ header {
 
 .coordonées h5 {
     margin: 0.3rem;
+    text-decoration: underline;
 }
 
 .coordonées p {
