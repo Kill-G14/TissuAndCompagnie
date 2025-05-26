@@ -218,6 +218,14 @@ p {
     margin-bottom: 10px;
 }
 
+.detailsCommande span {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.detailsCommande :first-child {
+    font-size: 14px;
+}
 
 
 
@@ -925,7 +933,8 @@ header {
 
 /* Historique de commande */
 
-.historiqueDeCommande span {
+.historiqueDeCommande h6 {
+    margin: 0;
     margin-bottom: 1.5rem;
 }
 
@@ -936,12 +945,4 @@ header {
     margin-bottom: 1rem;
 }
 
-.detailsCommande span {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-
-.detailsCommande :first-child {
-    font-size: 14px;
-}
 
