@@ -203,6 +203,10 @@ header {
     height: 45px;
 }
 
+.reseauSociaux :hover {
+    scale: 1.1;
+}
+
 .logoEtReseauSociaux {
     display: flex;
     justify-content: space-between;
