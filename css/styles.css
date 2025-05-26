@@ -803,6 +803,7 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     color: #5E7C46;
+    padding: 1.5rem;
 }
 
 .historiqueDeCommande {
@@ -815,10 +816,9 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.coordonées {
+.coordonees {
     display: flex;
     flex-direction: row;
     color: #5E7C46;
@@ -835,30 +835,36 @@ header {
     padding: 1rem;
 }
 
-.coordonées h5 {
+.coordonees h5 {
     margin: 0.3rem;
     text-decoration: underline;
 }
 
-.coordonées p {
+.coordonees p {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
 
-.coordonées span {
+.coordonees span {
     font-size: 1.2rem;
 }
 
-.coordonéesInfo {
+.coordoneesInfo {
     margin: 0.3rem;
 }
 
-.coordonées img {
+.coordonees img {
     background-color: #FFEDD3;
     border-radius: 50%;
     padding: 15px;
     width: 45px;
     height: 45px;
     overflow: visible; 
+}
+
+.informationClient button {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    max-width: 100px;
 }
 
