@@ -1,0 +1,231 @@
+/* Prolfile */
+
+.containerProfile {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: #5E7C46;
+    padding: 1.5rem;
+}
+
+.historiqueDeCommande {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.informationClient {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coordonees {
+    display: flex;
+    flex-direction: row;
+    color: #5E7C46;
+    gap: 1rem;
+    align-items: center;
+}
+
+.coordonneesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: #5E7C46 2px solid;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.coordonees h5 {
+    margin: 0.3rem;
+    text-decoration: underline;
+}
+
+.coordonees p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.coordonees span {
+    font-size: 1.2rem;
+}
+
+.coordoneesInfo {
+    margin: 0.3rem;
+}
+
+.coordonees img {
+    background-color: #FFEDD3;
+    border-radius: 50%;
+    padding: 15px;
+    width: 45px;
+    height: 45px;
+    overflow: visible;
+}
+
+.informationClient button {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    max-width: 100px;
+}
+
+/* Historique de commande */
+
+
+.cardListCommande {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.titreHistorique h6 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.historiqueDeCommandeList {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    /* Permet de retourner à la ligne si besoin */
+}
+
+.cardListCommande h6 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #5E7C46;
+}
+
+.cardCommande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    border-radius: 8px;
+    border: 2px solid #5E7C46;
+    gap: 1rem;
+}
+
+.detailsCommande {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    color: #5E7C46;
+    font-size: 1rem;
+}
+
+/* Card */
+
+.cardProduit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 200px;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    gap: 16px;
+    border: #5E7C46 3px solid;
+}
+
+.imgProduit {
+    width: 100%;
+    height: 200px;
+}
+
+.cardProduit img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardProduit .detailsProduit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    color: #5E7C46;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.prixProduit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #5E7C46;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* CardCommande */
+
+.cardCommande {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 200px;
+    border-radius: 8px;
+    gap: 16px;
+    border: #5E7C46 2px solid;
+}
+
+.imgCommande {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.badgeCommande {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: #5E7C46;
+    padding: 6px 12px;
+    padding-left: 4px;
+    font-size: 12px;
+    clip-path: polygon(0 0, 100% 0, 60%, 100%, 0% 100%);
+    z-index: 2;
+    border-bottom-right-radius: 15px;
+}
+
+.cardCommande img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.detailsCommande {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+    color: #5E7C46;
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.detailsCommande span {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.detailsCommande :first-child {
+    font-size: 14px;
+}

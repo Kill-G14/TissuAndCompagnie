@@ -1,0 +1,71 @@
+
+/* panier */
+
+.containerProfile {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: #5E7C46;
+    padding: 1.5rem;
+}
+
+.historiqueDeCommande {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.informationClient {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.coordonees {
+    display: flex;
+    flex-direction: row;
+    color: #5E7C46;
+    gap: 1rem;
+    align-items: center;
+}
+
+.coordonneesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border: #5E7C46 2px solid;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.coordonees h5 {
+    margin: 0.3rem;
+    text-decoration: underline;
+}
+
+.coordonees p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.coordonees span {
+    font-size: 1.2rem;
+}
+
+.coordoneesInfo {
+    margin: 0.3rem;
+}
+
+.coordonees img {
+    background-color: #FFEDD3;
+    border-radius: 50%;
+    padding: 15px;
+    width: 45px;
+    height: 45px;
+    overflow: visible;
+}
+
+.informationClient button {
+    margin-top: 1.5rem;
+    margin-left: auto;
+    max-width: 100px;
+}
