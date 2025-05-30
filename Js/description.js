@@ -22,7 +22,7 @@ function getProduct() {
 function renderProduct(product) {
     const categorie = product.categorie?.toLowerCase();
 
-    // Définir le titre (h3)
+    // Définir le Nom du produit
     const h3 = document.querySelector('h3');
     if (categorie === 'other') {
         h3.textContent = product.nom || 'Produit';
