@@ -44,13 +44,11 @@ body {
 }
 
 .btnStyle3 {
-    background: transparent;
     color: #FFEDD3;
     border: 2px solid #FFEDD3;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    font-size: 1rem;
 }
 
 .btnStyle3:hover {
@@ -59,18 +57,18 @@ body {
 }
 
 .btnStyle4 {
-    background: transparent;
     color: #5E7C46;
     border: 2px solid #5E7C46;
-    border-radius: 25px;
-    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    padding: 10px 25px;
     cursor: pointer;
-    font-size: 1rem;
+    background-color: #FFFFFF;
 }
 
 .btnStyle4:hover {
-    background-color: #5E7C46;
-    color: #FFEDD3;
+    background-color: #FFFFFF;
+    color: #ff1414;
+    border: #ff1414 2px solid;
 }
 
 input {
