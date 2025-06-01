@@ -3,11 +3,6 @@ document.querySelector('form').addEventListener('submit', async function (event)
 
     const email = document.getElementById('email').value.trim()
     const name = document.getElementById('Nom').value.trim()
-    const prenom = document.getElementById('Prenom').value.trim()
-    const telephone = document.getElementById('telephone').value.trim()
-    const adresse = document.getElementById('Adresse').value.trim()
-    const adresse2 = document.getElementById('Adresse2').value.trim()
-    const pays = document.getElementById('Pays').value.trim()
     const password = document.getElementById('password').value
     const confirmPassword = document.getElementById('confirm-password').value
 
@@ -19,13 +14,18 @@ document.querySelector('form').addEventListener('submit', async function (event)
     const userData = {
         action: 'registerNewUser',
         email: email,
-        userName: `${prenom} ${name}`,// concaténer pour correspondre au champ `name` attendu
-        password: password,
-        telephone: telephone,
-        adresse: adresse,
-        adresse2: adresse2,
-        pays: pays
+        userName: name,
+        password: password
     }
+
+    // Champs facultatifs
+    const optionalFields = ['Prenom', 'telephone', 'Adresse', 'Adresse2', 'Pays']
+    optionalFields.forEach(field => {
+        const value = document.getElementById(field)?.value.trim()
+        if (value) {
+            userData[field.toLowerCase()] = value
+        }
+    })
 
     try {
         const response = await fetch('http://localhost/TissuAndCompagnie-Backend/Api/inscriptionBack.php', {
@@ -39,13 +39,12 @@ document.querySelector('form').addEventListener('submit', async function (event)
         const result = await response.json()
 
         if (result.success) {
-            alert(result.message)
-            window.location.href = 'connexion.html'
+            alert('Inscription réussie !')
         } else {
-            alert('Erreur : ' + result.message)
+            alert(`Erreur : ${result.message}`)
         }
     } catch (error) {
-        console.error('Erreur lors de la requête :', error)
+        console.error('Erreur lors de la requête d’inscription :', error)
         alert('Une erreur est survenue. Veuillez réessayer plus tard.')
     }
 })
