@@ -69,3 +69,101 @@
     margin-left: auto;
     max-width: 100px;
 }
+
+
+/* panier */
+
+.panierContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    background-color: #FFEDD3;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 900px;
+    margin: 20px auto;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.panierImg img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #5E7C46;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.panierInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottomPanierInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detailsDescription {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: #5E7C46;
+    font-size: 18px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.detailsDescription p {
+    margin: 5px 0;
+    width: 45%; 
+}
+
+.quantity-control {
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid #5E7C46;
+    border-radius: 80px;
+    overflow: hidden;
+    width: auto;
+}
+
+.quantity-control button {
+    background-color: #5E7C46;
+    color: #FFEDD3;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-control button:hover {
+    background-color: #50911D
+}
+
+.quantity-control input {
+    width: 100%;
+    background-color: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    outline: none;
+}
+
+.quantity-control input::-webkit-inner-spin-button,
+.quantity-control input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    /* Retirer flèches Chrome/Safari */
+    margin: 0;
+}

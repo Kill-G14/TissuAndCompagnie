@@ -43,6 +43,36 @@ body {
     outline: #5E7C46 1px solid;
 }
 
+.btnStyle3 {
+    background: transparent;
+    color: #FFEDD3;
+    border: 2px solid #FFEDD3;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btnStyle3:hover {
+    background-color: #FFEDD3;
+    color: #5E7C46;
+}
+
+.btnStyle4 {
+    background: transparent;
+    color: #5E7C46;
+    border: 2px solid #5E7C46;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btnStyle4:hover {
+    background-color: #5E7C46;
+    color: #FFEDD3;
+}
+
 input {
     background-color: #FFEDD3;
     color: #000000;
@@ -322,5 +352,68 @@ header {
 .footer a:hover {
     color: #5E7C46;
     text-decoration: none;
+}
+
+/* Modal */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5E7C46;
+}
+
+.modal {
+    background-color: #5E7C46;
+    border: 3px solid #FFEDD3;
+    border-radius: 25px;
+    padding: 1.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #FFEDD3;
+    height: 300px;
+    width: 400px;
+    font-family: sans-serif;
+}
+
+.modal form {
+    margin-left: 20px;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+
+.modal label {
+    display: block;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.modal label span {
+    margin-left: 5px;
+}
+
+.modal input {
+    width: 100%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    align-items: center;
 }
 
