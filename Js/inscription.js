@@ -18,7 +18,6 @@ document.querySelector('form').addEventListener('submit', async function (event)
         password: password
     }
 
-    // Champs facultatifs
     const optionalFields = ['Prenom', 'telephone', 'Adresse', 'Adresse2', 'Pays']
     optionalFields.forEach(field => {
         const value = document.getElementById(field)?.value.trim()
@@ -28,7 +27,7 @@ document.querySelector('form').addEventListener('submit', async function (event)
     })
 
     try {
-        const response = await fetch('http://localhost/TissuAndCompagnie-Backend/Api/inscriptionBack.php', {
+        const response = await fetch('http://localhost/TissuAndCompagnie-Backend/Api/InscriptionBack.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
