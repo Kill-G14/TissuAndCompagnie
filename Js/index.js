@@ -42,9 +42,8 @@ function initModalBehavior() {
             modalElement = clone.querySelector('.modalOverlay')
 
             // Positionner la modal
-            const rect = connectionBtn.getBoundingClientRect()
             modalElement.style.position = 'absolute'
-            modalElement.style.zIndex = '1000'
+            modalElement.style.zIndex = '100'
 
             // Empêcher la fermeture au clic dans la modal
             modalElement.addEventListener('click', e => e.stopPropagation())
