@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flux en stock</title>
+  <link rel="stylesheet" href="css/fluxProduit.css">
+
+
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <div class="nav-buttons">
+        <button>Client</button>
+        <button>Flux/Produit</button>
+        <button>Commande</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Rechercher..." />
+        <button>🔍</button>
+      </div>
+      <button class="logout">Déconnecter</button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Flux En stock</h1>
+
+    <div class="main-actions">
+      <div class="search-section">
+        <input type="text" placeholder="Rechercher..." />
+        <button>🔍</button>
+      </div>
+      <div class="buttons">
+        <button>Nouveau</button>
+        <button>Importer</button>
+        <button>Exporter</button>
+      </div>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Référence :</th>
+          <th>Quantité :</th>
+          <th>Emplacement :</th>
+          <th>Action :</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            {abc123}<br>
+            Type: Tissu / Matière: Soie<br>
+            Couleur: Blanche / Laize: 120
+          </td>
+          <td>100</td>
+          <td>
+            casier 2<br>
+            emplacement 6<br>
+            Com:
+          </td>
+          <td>
+            <button>Éditer:</button><br>
+            <button>Supprimer:</button>
+          </td>
+        </tr>
+        <tr><td colspan="4">&nbsp;</td></tr>
+        <tr><td colspan="4">&nbsp;</td></tr>
+        <tr><td colspan="4">&nbsp;</td></tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
