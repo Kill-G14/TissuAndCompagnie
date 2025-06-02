@@ -21,7 +21,7 @@ async function loadTemplate(path) {
 
         console.log('Templates chargés :', templateObjects)
 
-        // Initialiser les interactions après le chargement
+        // Initialise les interactions après le chargement
         initModalBehavior()
     } catch (error) {
         console.error('Erreur de chargement du template :', error)
@@ -41,7 +41,7 @@ function initModalBehavior() {
             const clone = templateObjects.modal.cloneNode(true)
             modalElement = clone.querySelector('.modalOverlay')
 
-            // Positionner la modal juste en dessous du bouton
+            // Positionner la modal
             const rect = connectionBtn.getBoundingClientRect()
             modalElement.style.position = 'absolute'
             modalElement.style.zIndex = '1000'
@@ -51,7 +51,7 @@ function initModalBehavior() {
 
             modalContainer.appendChild(modalElement)
         } else {
-            // Toggle fermeture
+            // fermer la modal lors du clique en dehors
             modalContainer.removeChild(modalElement)
             modalElement = null
         }
