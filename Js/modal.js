@@ -1,6 +1,6 @@
 const templateObjects = {}
 const modalContainer = document.getElementById('modalContainer')
-const connectionBtn = document.getElementById('btnModal')
+const connexionBtn = document.getElementById('btnModal')
 let modalElement = null
 
 
@@ -29,12 +29,12 @@ async function loadTemplate(path) {
 }
 
 function initModalBehavior() {
-    if (!connectionBtn) {
-        console.warn('Bouton Connection introuvable.');
+    if (!connexionBtn) {
+        console.warn('Bouton Connexion introuvable.');
         return;
     }
 
-    connectionBtn.addEventListener('click', (event) => {
+    connexionBtn.addEventListener('click', (event) => {
         event.stopPropagation();
 
         if (!modalElement) {
