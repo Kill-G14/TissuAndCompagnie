@@ -60,7 +60,6 @@ function initModalBehavior() {
 
             modalContainer.appendChild(modalElement);
 
-            // Lier les comportements dynamiques
             attachLoginBehavior(modalElement);
         } else {
             closeModal();
