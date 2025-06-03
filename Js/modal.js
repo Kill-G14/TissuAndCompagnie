@@ -59,8 +59,6 @@ function initModalBehavior() {
             }
 
             modalContainer.appendChild(modalElement);
-
-            attachLoginBehavior(modalElement);
         } else {
             closeModal();
         }
