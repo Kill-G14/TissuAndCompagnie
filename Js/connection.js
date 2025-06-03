@@ -3,40 +3,43 @@ document.addEventListener('DOMContentLoaded', () => {
   
     loginForm.addEventListener('submit', (event) => {
       event.preventDefault();
+      const email = document.querySelector('#email').value.trim();
+      const password = document.querySelector('#password').value.trim();
   
-      const email = document.getElementById('email').value.trim();
-      const password = document.getElementById('password').value.trim();
+      if (email === '' || password === '') {
+        console.warn('Veuillez remplir tous les champs.');
+        return;
+      }
+      connect(email, password);
+    });
+  });
 
-      const data = {
+  async function connect (email, password) {
+    const headers = {
+      'Content-Type': 'application/json'
+    };
+    const method = 'POST';
+    const body = JSON.stringify(
+      {
         action: 'connect',
         email: email,
         password: password
-      };
-  
-      fetch('http://localhost/TissuAndCompagnie-Backend/Api/ConnectionBack.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
-      })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Erreur réseau : ' + response.status);
-        }
-        return response.json();
-      })
-      .then(result => {
-        if (result.success) {
-          alert('Connexion réussie. Bienvenue ' + result.user.name + ' !');
+      }
+    );
 
-        } else {
-          alert('Erreur : ' + result.message);
-        }
-      })
-      .catch(error => {
-        console.error('Erreur lors de la requête :', error);
-        alert('Une erreur est survenue. Veuillez réessayer.');
-      });
+    const result = await fetch('http://localhost/TissuAndCompagnie-Backend/Api/ConnectionBack.php', {
+      method: method,
+      headers: headers,
+      body: body,
     });
-  });
+
+    const response = await result.json();
+    console.log(response);
+
+    if (response.succes && response.token) {
+      localStorage.setItem('token', response.token);
+      console.log("connexion reussie" + response.token);
+    } else {
+      console.warn("Erreur de connexion.");
+    }
+  }
