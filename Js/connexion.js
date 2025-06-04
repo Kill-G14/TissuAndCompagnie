@@ -95,7 +95,7 @@ async function connect (email, password) {
     }
   );
 
-  const result = await fetch('http://localhost/TissuAndCompagnie-Backend/Api/ConnectionBack.php', {
+  const result = await fetch('http://localhost/TissuAndCompagnie-Backend/api/ConnectionBack.php', {
     method: method,
     headers: headers,
     body: body,
