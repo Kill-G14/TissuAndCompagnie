@@ -1,5 +1,5 @@
 // Vérifie si l'utilisateur est connecté
-const estConnecte = localStorage.getItem('estConnecte') === 'true';
+const estConnecte = localStorage.getItem('isConnected') === 'true';
 
 // Récupération des éléments du DOM
 const btnInscription = document.getElementById('btnInscription');
