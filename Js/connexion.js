@@ -107,7 +107,5 @@ async function connect (email, password) {
   if (response.succes && response.token) {
     localStorage.setItem('token', response.token);
     console.log("connexion reussie" + response.token);
-  } else {
-    console.warn("Erreur de connexion.");
   }
 }
