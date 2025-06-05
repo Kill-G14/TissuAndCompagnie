@@ -38,9 +38,9 @@ document.querySelector('form').addEventListener('submit', async function (event)
         const result = await response.json()
 
         if (result.success) {
-            alert('Inscription réussie !')
+            console.log('Inscription réussie !')
         } else {
-            alert(`Erreur : ${result.message}`)
+            console.log(`Erreur : ${result.message}`)
         }
     } catch (error) {
         console.error('Erreur lors de la requête d’inscription :', error)
