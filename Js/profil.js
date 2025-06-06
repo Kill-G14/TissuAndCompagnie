@@ -36,24 +36,26 @@ document.addEventListener("DOMContentLoaded", () => {
   
     btnDeconnexion.addEventListener("click", async () => {
       try {
-        const response = await fetch('http://localhost/TissuAndCompagnie-Backend/Api/ConnectionBack.php', {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ action: "logout" })
+        const result = await fetch('http://localhost/TissuAndCompagnie-Backend/api/DeconnexionBack.php', {
+            method: 'POST',
+            headers: {
+              //envoye le token pour l'invalider coter serveur
+              'Content-Type': 'application/json'+ localStorage.getItem('token'),
+            }
         });
-  
-        const result = await response.json();
-  
-        if (result.status === "success") {
-          alert("Déconnexion réussie.");
-          window.location.href = "index.html";
+    
+        const response = await result.json();
+        console.log(response);
+    
+        if (response.success) {
+            localStorage.removeItem('token');
+            console.log("Déconnexion réussie.");
+            window.location.href = '/index.html';
         } else {
-          alert("Erreur lors de la déconnexion.");
+            console.warn("Échec de la déconnexion.");
         }
-      } catch (error) {
-        console.error("Erreur lors de la déconnexion :", error);
-        alert("Une erreur est survenue.");
-      }
+    } catch (error) {
+        console.error("Erreur lors de la requête de déconnexion :", error);
+    }
     });
-  });
-  
+  });    
