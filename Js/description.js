@@ -1,3 +1,6 @@
+document.addEventListener('DOMContentLoaded', () => {
+    getProduct();
+})
 function getProduct() {
     fetch('http://localhost/TissuAndCompagnie-Backend/Api/ProductsController.php', {
         method: 'POST',
@@ -138,5 +141,3 @@ function capitalize(str) {
     return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-// Lancer au chargement
-getProduct();

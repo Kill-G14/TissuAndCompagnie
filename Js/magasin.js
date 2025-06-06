@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const filtre = params.get('filtre');
+
+    if (filtre) {
+        // Coche la case correspondant au filtre
+        const checkbox = document.querySelector(`input[name="enVedette"][value="${filtre}"]`);
+        if (checkbox) {
+            checkbox.checked = true;
+        }
+    }
+});
 const templateObjects = {}
 loadTemplate('./components/product.html')
 async function loadTemplate (path){
@@ -87,18 +99,7 @@ async function ajouterAuPanier(produit) {
 
 
 
-window.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const filtre = params.get('filtre');
 
-    if (filtre) {
-        // Coche la case correspondant au filtre
-        const checkbox = document.querySelector(`input[name="enVedette"][value="${filtre}"]`);
-        if (checkbox) {
-            checkbox.checked = true;
-        }
-    }
-});
 
 
 
