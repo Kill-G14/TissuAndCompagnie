@@ -19,6 +19,8 @@ body {
     border-radius: 20px;
     cursor: pointer;
     text-decoration: none;
+    min-width: 60px;
+    text-align: center;
 }
 
 .btnStyle1:hover {
