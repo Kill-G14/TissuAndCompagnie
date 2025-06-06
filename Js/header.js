@@ -24,3 +24,33 @@ function updateHeaderButtons() {
         }
     }
 }
+
+async function tokenVerif() {
+    const token = localStorage.getItem('token');
+    if (token) {
+        const headers = {
+            'Content-Type': 'application/json',
+        };
+        const body = JSON.stringify({
+            action: 'checkToken',
+            token: token
+        });
+    
+        const result = await fetch('http://localhost/TissuAndCompagnie-Backend/api/ConnectionBack.php', {
+            method: 'POST',
+            headers: headers,
+            body: body,
+        });
+    
+        const response = await result.json();
+        console.log(response);
+    
+        if (response.success) {
+            updateHeaderButtons();
+            console.log("Token valide.");    
+        } else {
+            localStorage.removeItem('token');
+        }
+    }
+}
+

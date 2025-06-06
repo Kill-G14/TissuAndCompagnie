@@ -1,5 +1,5 @@
 
-const templateObjects = {};
+const templateObjectsConnexion = {};
 const modalContainer = document.getElementById('modalContainer');
 const connexionBtn = document.getElementById('btnModal');
 let modalElement = null;
@@ -16,7 +16,7 @@ async function loadTemplate(path) {
 
         templates.forEach((template) => {
             const templateId = template.id;
-            templateObjects[templateId] = template.content;
+            templateObjectsConnexion[templateId] = template.content;
         });
 
         initModalBehavior();
@@ -32,7 +32,7 @@ function initModalBehavior() {
         event.stopPropagation();
 
         if (!modalElement) {
-            const clone = templateObjects.modal.cloneNode(true);
+            const clone = templateObjectsConnexion.modal.cloneNode(true);
             modalElement = clone.querySelector('.modalOverlay');
 
             modalElement.style.position = 'absolute';

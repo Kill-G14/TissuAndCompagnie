@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     getProduct();
+    tokenVerif();
 })
 function getProduct() {
     fetch('http://localhost/TissuAndCompagnie-Backend/Api/ProductsController.php', {

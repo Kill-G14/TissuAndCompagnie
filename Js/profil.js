@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    tokenVerif();
     const btnModifier = document.getElementById("btnModifier");
     const btnDeconnexion = document.getElementById("btnDeconnexion");
   

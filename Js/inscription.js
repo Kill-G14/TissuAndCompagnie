@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     bindSubtmit()
+    tokenVerif();
 })
 function bindSubtmit() {
     document.querySelector('form').addEventListener('submit', async function (event) {

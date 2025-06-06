@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    tokenVerif();
     const params = new URLSearchParams(window.location.search);
     const filtre = params.get('filtre');
 
@@ -10,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-const templateObjects = {}
+const templateObjectsMagasin = {}
 loadTemplate('./components/product.html')
 async function loadTemplate (path){
     // récuperer le contenu d'un fichier html
@@ -26,9 +27,9 @@ async function loadTemplate (path){
 
     templates.forEach((template) => {
         const templateId = template.id
-        templateObjects[templateId] = template.content
+        templateObjectsMagasin[templateId] = template.content
     })
-    console.log(templateObjects);
+    console.log(templateObjectsMagasin);
 }
 async function getProducts(){
     const response = await fetch(' http://localhost/TissuAndCompagnie-Backend/Api/ProductsController.php')
@@ -43,7 +44,7 @@ async function getProducts(){
         productsContainer.innerHTML = ''
     
         products.forEach((product) => { 
-            const productTemplate = templateObjects['cardProduct'].cloneNode(true)
+            const productTemplate = templateObjectsMagasin['cardProduct'].cloneNode(true)
     
             const typeProduit = productTemplate.querySelector('#typeProduit')
             const couleurProduit = productTemplate.querySelector('#couleurProduit')
