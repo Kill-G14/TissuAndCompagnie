@@ -105,6 +105,7 @@ async function connect(email, password) {
             localStorage.setItem('token', response.token);
             console.log("Connexion réussie : " + response.token);
             closeModal();
+            updateHeaderButtons();
         } else {
             console.warn("Échec de la connexion.");
         }
