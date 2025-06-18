@@ -17,7 +17,7 @@ async function disconnect() {
       }
     );
   
-    if (result.ok) {
+    if (result.success) {
       localStorage.removeItem("token");
       const resultJson = await result.json();
       console.log(resultJson.message);
