@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   tokenVerif();
 
+  btnDeconnexion.addEventListener("click", async () => {
+      disconnect();
+  })
   const btnModifier = document.getElementById("btnModifier");
   const btnDeconnexion = document.getElementById("btnDeconnexion");
 

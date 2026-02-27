@@ -92,7 +92,7 @@ async function connect(email, password) {
     });
 
     try {
-        const result = await fetch('http://localhost/TissuAndCompagnie-Backend/api/ConnectionBack.php', {
+        const result = await fetch('http://localhost/TissuAndCompagnie-Backend/api/ConnexionBack.php', {
             method: 'POST',
             headers: headers,
             body: body,

@@ -19,7 +19,7 @@ function bindSubtmit() {
         const userData = {
             action: 'registerNewUser',
             email: email,
-            userName: name,
+            name: name,
             password: password
         }
     
